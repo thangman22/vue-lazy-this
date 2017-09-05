@@ -13,4 +13,11 @@ yarn add vue-lazy-this
 
 ```
 
+## Usage
+
+``` javascript
+import LazyThis from 'vue-lazy-this'
+
+Vue.use(LazyThis, options)
+```
 
