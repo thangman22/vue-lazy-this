@@ -1,6 +1,6 @@
 {
-  "name": "observer-vue",
-  "description": "A Vue.js project",
+  "name": "vue-lazy-this",
+  "description": "Lazyloading component using Intersection Observer API",
   "version": "1.0.0",
   "author": "Warat Wongmaneekit <canopybanj@gmail.com>",
   "license": "MIT",
