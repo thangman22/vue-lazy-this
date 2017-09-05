@@ -6,9 +6,10 @@
   "license": "MIT",
   "repository": "thangman22/vue-lazy-this",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "test": "./node_modules/karma/bin/karma start ./tests/karma.conf.js"
   },
-  "main": "dist/vue-timeago.js",
+  "main": "dist/build.js",
   "files": [
     "dist"
   ],
