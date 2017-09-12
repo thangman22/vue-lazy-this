@@ -1,6 +1,6 @@
 # Vue.js Lazy This
 
-> Lazyloading component using Intersection Observer API
+> Lazyloading component using Intersection Observer API. This plugin will help you to show and hide component base on viewport showing
 
 ## Install
 
@@ -21,6 +21,21 @@ On javascript file
 import LazyThis from 'vue-lazy-this'
 
 Vue.use(LazyThis, options)
+
+//or
+
+const DEFAULT_OPT = {
+  config: {
+    rootMargin: '50px 0px',
+    threshold: 0.01
+  },
+  minimumIntersectionRatio: 0,
+  visible: false,
+  autoUnobserve: true
+}
+
+Vue.use(LazyThis, DEFAULT_OPT)
+
 ```
 
 On template
@@ -34,19 +49,19 @@ On template
 ```
 ## Options
 
-###minimumIntersectionRatio
+### minimumIntersectionRatio
 
 Minimum ratio for intersection for display component 
 
 **default: 0**
 
-###autoUnobserve
+### autoUnobserve
 
 Auto UnObserve when Component out of view port. This feature will make component permanently visible after first trigger. 
 
 **default: true**
 
-###config
+### config
 
 Support native options for IntersectionObserverAPI follow this [link]
 
