@@ -45,3 +45,4 @@ Auto UnObserve when Component out of view port. This feature will make component
 **config**
 
 Support native options for IntersectionObserverAPI follow this [link] (https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
+**default: { rootMargin: '50px 0px', threshold: 0.01 }**
