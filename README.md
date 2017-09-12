@@ -15,11 +15,15 @@ yarn add vue-lazy-this
 
 ## Usage
 
+On javascript file
+
 ``` javascript
 import LazyThis from 'vue-lazy-this'
 
 Vue.use(LazyThis, options)
 ```
+
+On template
 
 ``` HTML
   <lazy-this>
@@ -28,4 +32,9 @@ Vue.use(LazyThis, options)
     <img slot="onNotEnter" src="https://dummyimage.com/640x4:3/"/>
   </lazy-this>
 ```
+## Options
+
+**minimumIntersectionRatio**
+Minimum ratio for intersection for display component **default: 0**
+
 

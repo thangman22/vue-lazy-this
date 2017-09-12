@@ -16,7 +16,8 @@ const install = function (Vue, opt = {}) {
     },
     minimumIntersectionRatio: 0,
     observer: Object,
-    visible: false
+    visible: false,
+    autoUnobserve: true
   }
   
   const option = merge(DEFAULT_OPT, opt)
