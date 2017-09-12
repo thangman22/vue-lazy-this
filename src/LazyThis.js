@@ -23,8 +23,14 @@ export default function (option) {
         let element = entry[0]
         if(element.intersectionRatio > this.minimumIntersectionRatio) {
           this.visible = true
-          this.observer.unobserve(element.target)
-          this.observer.disconnect()
+          if(this.autoUnobserve === true) {
+            this.observer.unobserve(element.target)
+            this.observer.disconnect()
+          }
+        }else{
+          if(this.autoUnobserve !== true) {
+            this.visible = false
+          }
         }
       }
     }
