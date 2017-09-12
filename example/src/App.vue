@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div id="margin"></div>
     <lazy-this>
       <img slot="onEnter" src="https://dummyimage.com/640x4:3/"/>
     </lazy-this>
@@ -16,3 +17,9 @@ export default {
   }
 }
 </script>
+<style>
+#margin{
+  margin-top: 1000px;
+}
+</style>
+
