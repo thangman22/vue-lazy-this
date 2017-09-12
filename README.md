@@ -34,17 +34,22 @@ On template
 ```
 ## Options
 
-**minimumIntersectionRatio**
+###minimumIntersectionRatio
 
-Minimum ratio for intersection for display component **default: 0**
+Minimum ratio for intersection for display component 
 
-**autoUnobserve**
+**default: 0**
 
-Auto UnObserve when Component out of view port. This feature will make component permanently visible after first trigger. **default: true**
+###autoUnobserve
 
-**config**
+Auto UnObserve when Component out of view port. This feature will make component permanently visible after first trigger. 
+
+**default: true**
+
+###config
 
 Support native options for IntersectionObserverAPI follow this [link]
+
 **default: { rootMargin: '50px 0px', threshold: 0.01 }**
 
 [link]: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
